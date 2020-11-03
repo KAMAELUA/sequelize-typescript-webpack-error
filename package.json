@@ -1,0 +1,53 @@
+{
+  "name": "argo-app-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.ts",
+  "private": true,
+  "scripts": {
+    "start": "node dist/main.bundle.js --no-oms --no-rms",
+    "start:ts": "set NODE_ENV=production && ts-node main.ts --no-oms --no-rms",
+    "start:dev": "NODE_ENV=development webpack",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config=webpack.config.prod.js --mode development --progress --color"
+  },
+  "author": "Andrey Chugay <kamaelua@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "deep-assign": "^3.0.0",
+    "mysql2": "^2.2.5",
+    "redent": "^3.0.0",
+    "reflect-metadata": "^0.1.13",
+    "sequelize": "5.21.10",
+    "sequelize-typescript": "^1.1.0",
+    "tsyringe": "^4.3.0",
+    "tedious": "^9.2.1",
+    "trim-newlines": "^3.0.0",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/bluebird": "^3.5.32",
+    "@types/deep-assign": "^0.1.1",
+    "@types/mime": "^2.0.1",
+    "@types/node": "^12.12.42",
+    "@types/tedious": "^4.0.2",
+    "@types/winston": "^2.4.4",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^6.2.1",
+    "file-loader": "^6.2.0",
+    "native-ext-loader": "^2.3.0",
+    "rimraf": "^3.0.2",
+    "svn-info": "^1.1.0",
+    "terser-webpack-plugin": "^5.0.3",
+    "ts-loader": "^8.0.7",
+    "tslint": "^5.20.1",
+    "typescript": "4.0.5",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^5.3.1",
+    "webpack-cli": "^4.1.0"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}

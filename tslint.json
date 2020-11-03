@@ -1,0 +1,54 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {},
+    "rules": {
+        "forin": false,
+        "arrow-return-shorthand": true,
+        "callable-types": true,
+        "class-name": true,
+        "curly": true,
+        "deprecation": {
+            "severity": "warn"
+        },
+        "max-line-length": false,
+        "object-literal-sort-keys": false,
+        "eofline": true,
+        "variable-name": {
+            "severity": "warn",
+            "options": [
+                "allow-snake-case",
+                "allow-leading-underscore",
+                "allow-pascal-case"
+            ]
+        },
+        "semicolon": [
+            true,
+            "always",
+            "strict-bound-class-methods"
+        ],
+        "import-spacing": true,
+        "interface-over-type-literal": true,
+        "ban-comma-operator": false,
+        "member-ordering": [
+            true,
+            {
+                "order": [
+                    "static-field",
+                    "instance-field",
+                    "static-method",
+                    "instance-method"
+                ]
+            }
+        ],
+        "no-arg": true,
+        "no-empty": false,
+        "prefer-const": true,
+        "no-string-literal": false,
+        "no-unused-variable": false,
+        "no-bitwise": false
+    },
+    "rulesDirectory": []
+}

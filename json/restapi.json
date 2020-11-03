@@ -1,0 +1,11 @@
+{
+  "database": {
+    "database": "argo_db_iran",
+    "host": "192.168.0.2",
+    "port": 59076,
+    "user": "argo_db_iran",
+    "pass": "argo_db_iran",
+    "dialect": "mssql",
+    "schema": "argo"
+  }
+}
